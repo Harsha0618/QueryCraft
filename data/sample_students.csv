@@ -1,0 +1,16 @@
+student_id,name,subject,marks,total_marks,grade,attendance_pct,city
+1,Alice,Math,88,100,A,95,Mumbai
+2,Bob,Science,72,100,B,88,Delhi
+3,Carol,Math,91,100,A,97,Mumbai
+4,Dave,Science,65,100,C,75,Bangalore
+5,Eve,Math,78,100,B,90,Delhi
+6,Frank,Science,85,100,A,93,Mumbai
+7,Grace,Math,55,100,D,70,Bangalore
+8,Heidi,Science,92,100,A,99,Delhi
+9,Ivan,Math,67,100,C,82,Mumbai
+10,Judy,Science,74,100,B,88,Bangalore
+11,Karl,Math,81,100,A,91,Delhi
+12,Laura,Science,60,100,D,68,Mumbai
+13,Mallory,Math,95,100,A,98,Bangalore
+14,Niaj,Science,70,100,B,85,Delhi
+15,Olivia,Math,83,100,A,94,Mumbai
