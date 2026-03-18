@@ -14,7 +14,7 @@ app = FastAPI(title="Report Builder API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://your-app.vercel.app",
+        "https://query-craft-lilac.vercel.app/",
         "http://localhost:5173",   # keep for local dev
     ],
     allow_credentials=True,
