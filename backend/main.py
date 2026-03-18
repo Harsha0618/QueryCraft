@@ -11,15 +11,21 @@ import google.generativeai as genai
 
 app = FastAPI(title="Report Builder API")
 
+origins = [
+    "http://localhost:5173",
+    "http://localhost:4173",
+]
+
+frontend_url = os.environ.get("FRONTEND_URL", "")
+if frontend_url:
+    origins.append(frontend_url.rstrip("/"))
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://query-craft-lilac.vercel.app/",
-        "http://localhost:5173",   # keep for local dev
-    ],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=origins,
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Accept"],
 )
 
 # In-memory store
